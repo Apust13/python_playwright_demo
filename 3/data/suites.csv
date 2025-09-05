@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8030","New User Registration","tests","Fri Sep 05 16:00:02 UTC 2025","passed","Fri Sep 05 16:00:10 UTC 2025","TestAuthorization","test_registration_user","",""
+"","3598","User login with valid email and password","tests","Fri Sep 05 15:59:53 UTC 2025","passed","Fri Sep 05 15:59:57 UTC 2025","TestAuthorization","test_registration_user","",""
+"","3217","User open home page with state logged in","tests","Fri Sep 05 15:59:58 UTC 2025","passed","Fri Sep 05 16:00:01 UTC 2025","","test_browser_state","",""
+"","4633","User login with valid email and password","tests","Fri Sep 05 15:59:57 UTC 2025","passed","Fri Sep 05 16:00:02 UTC 2025","TestAuthorization","test_registration_user","",""
