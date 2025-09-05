@@ -51,3 +51,4 @@ jobs:
           publish_branch: gh-pages
           publish_dir: allure-history
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          
