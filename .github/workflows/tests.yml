@@ -52,3 +52,4 @@ jobs:
           publish_dir: allure-history
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
+          
