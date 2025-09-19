@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 370" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=christopher.blackburn%40gmail.com&name=Christopher+Blackburn&title=Mr&birth_day=26&birth_month=07&birth_year=1988&firstname=Christopher&lastname=Blackburn&company=Jackson%2C+Matthews+and+Suarez&address1=03181+Lang+Village&address2=Suite+464&country=United+States&state=New+York&city=Lake+Rachel&zipcode=58991&password=8uKgEnku_m&mobile_number=%28979%29384-6501x430'
