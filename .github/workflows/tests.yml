@@ -3,10 +3,11 @@ name: UI tests demo
 on:
   push:
     branches:
-      - main
+      - master
+      - API
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   run-tests:
     runs-on: ubuntu-latest
