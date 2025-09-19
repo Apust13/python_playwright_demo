@@ -48,6 +48,7 @@ jobs:
 
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v4
+        if: always()
         with:
           publish_branch: gh-pages
           publish_dir: allure-history
