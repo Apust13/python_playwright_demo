@@ -1,0 +1,7 @@
+curl -X GET \
+"https://automationexercise.com/api/getUserDetailByEmail?email=charles.williams%40gmail.com" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1"

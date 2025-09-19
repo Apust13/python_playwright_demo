@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 334" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=charles.williams%40gmail.com&name=Charles+Williams&title=Mr&birth_day=08&birth_month=05&birth_year=1994&firstname=Charles&lastname=Williams&company=Parks-Diaz&address1=471+Burnett+Wall&address2=Apt.+553&country=United+States&state=Ohio&city=Kimberlyburgh&zipcode=92823&password=a%40G2EIy_Y%2A&mobile_number=%2B1-711-998-4371x525'
