@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 355" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=debra.ayala%40hotmail.com&name=Debra+Ayala&title=Mrs&birth_day=01&birth_month=08&birth_year=1959&firstname=Debra&lastname=Ayala&company=Cruz%2C+Byrd+and+Hughes&address1=46823+Hester+Forest+Suite+498&address2=Suite+780&country=United+States&state=Minnesota&city=South+Williamside&zipcode=81960&password=%26S7ycFAk7_&mobile_number=001-787-346-8575x567'

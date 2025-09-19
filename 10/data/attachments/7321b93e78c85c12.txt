@@ -1,0 +1,11 @@
+INFO     HTTP_LOGGER:event_hooks.py:15 Make GET request to https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:15 Make POST request to https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/login
+INFO     BASE_ASSERTIONS:base.py:22 Check that response status code contains "(<HTTPStatus.FOUND: 302>, <HTTPStatus.OK: 200>)"
+INFO     HTTP_LOGGER:event_hooks.py:15 Make GET request to https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:15 Make POST request to https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/login
+INFO     HTTP_LOGGER:event_hooks.py:15 Make GET request to https://automationexercise.com/api/productsList
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/api/productsList
