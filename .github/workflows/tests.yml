@@ -1,4 +1,4 @@
-name: UI tests demo
+name: UI and API tests demo
 
 on:
   push:
