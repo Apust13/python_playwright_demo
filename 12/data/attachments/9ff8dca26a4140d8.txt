@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 334" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=ashley.simpson%40hotmail.com&name=Ashley+Simpson&title=Mrs&birth_day=08&birth_month=12&birth_year=1982&firstname=Ashley&lastname=Simpson&company=Smith-Shaw&address1=054+Perez+Harbor&address2=Apt.+837&country=United+States&state=New+Hampshire&city=Michaelshire&zipcode=72979&password=%40glx%24CQhP0&mobile_number=678-406-9220x534'
