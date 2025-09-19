@@ -1,0 +1,12 @@
+curl -X POST \
+"https://automationexercise.com/login" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "referer: https://automationexercise.com/ApiRoute.LOGIN" \
+-H "cookie: csrftoken=glFoGTXvat9MWOsgpT2tsBaXeaEAS03D7hOSFZb42hqQgg0xN91XKLy3usA0iJnp" \
+-H "content-length: 132" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=jimds2111%40em23ail.com&password=12345678&csrfmiddlewaretoken=glFoGTXvat9MWOsgpT2tsBaXeaEAS03D7hOSFZb42hqQgg0xN91XKLy3usA0iJnp'

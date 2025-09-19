@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 329" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=kimberly.gilmore%40hotmail.com&name=Kimberly+Gilmore&title=Mrs&birth_day=23&birth_month=01&birth_year=1954&firstname=Kimberly&lastname=Gilmore&company=Jackson+Ltd&address1=480+Allen+Camp&address2=Suite+231&country=United+States&state=Texas&city=East+Lisa&zipcode=39439&password=%40%26c%28C%29wi1u&mobile_number=853-918-0099'

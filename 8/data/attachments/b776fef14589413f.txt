@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/verifyLogin" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 64" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=kimberly.gilmore%40hotmail.com&password=%40%26c%28C%29wi1u'
