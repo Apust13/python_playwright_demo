@@ -1,9 +1,10 @@
-name: UI tests demo
+name: UI and API tests demo
 
 on:
   push:
     branches:
       - master
+      - API
   pull_request:
     branches:
       - master
@@ -47,8 +48,8 @@ jobs:
 
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v4
+        if: always()
         with:
           publish_branch: gh-pages
           publish_dir: allure-history
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          

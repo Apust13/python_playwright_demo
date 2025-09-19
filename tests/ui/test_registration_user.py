@@ -11,7 +11,7 @@ from pages.deleted_account_page import DeletedAccountPage
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.signup_page import SignupPage
-from utils.routes import AppRoute
+from utils.ui_routes import AppRoute
 
 
 @allure.epic(AllureEpic.SIGNUP)

@@ -6,7 +6,7 @@ from config import settings
 from pages.login_page import LoginPage
 from utils.playwright.mocks import mock_static_resources
 from utils.playwright.pages import initialize_playwright_page
-from utils.routes import AppRoute
+from utils.ui_routes import AppRoute
 
 
 @pytest.fixture(params=settings.browsers)

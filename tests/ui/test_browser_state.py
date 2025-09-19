@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 from config import settings
 from pages.home_page import HomePage
 from utils.allure.stories import AllureStory
-from utils.routes import AppRoute
+from utils.ui_routes import AppRoute
 from utils.allure.tags import AllureTag
 
 

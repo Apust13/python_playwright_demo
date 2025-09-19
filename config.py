@@ -1,3 +1,4 @@
+import sys
 from enum import Enum
 from typing import Self
 
@@ -19,6 +20,19 @@ class TestUser(BaseModel):
 class TestData(BaseModel):
     image_png_file: FilePath
 
+class HTTPClientConfig(BaseModel):
+    api_base_url: HttpUrl
+    timeout: float
+    proxy_url: HttpUrl
+
+    @property
+    def client_url(self):
+        return str(self.api_base_url)
+
+    @property
+    def proxy(self):
+        return str(self.proxy_url)
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file='./.env',
@@ -26,6 +40,7 @@ class Settings(BaseSettings):
         env_nested_delimiter='.'
     )
 
+    http_client: HTTPClientConfig
     app_url: HttpUrl
     headless: bool
     browsers: list[Browser]
@@ -43,7 +58,14 @@ class Settings(BaseSettings):
 
 
     @classmethod
-    def initialize(slc) -> Self:
+    def initialize(cls) -> Self:
+        if "--headed" in sys.argv:
+            headless_override = False
+        elif "--headless" in sys.argv:
+            headless_override = True
+        else:
+            headless_override = None
+
         videos_dir = DirectoryPath('./video')
         tracing_dir = DirectoryPath('./tracing')
         browser_state_file = FilePath('./browser-state.json')
@@ -54,11 +76,16 @@ class Settings(BaseSettings):
         browser_state_file.touch(exist_ok=True)
         allure_results_dir.mkdir(exist_ok=True)
 
-        return Settings(
-            videos_dir = videos_dir,
+        base_settings = cls(
+            videos_dir=videos_dir,
             tracing_dir=tracing_dir,
             allure_results_dir=allure_results_dir,
             browser_state_file=browser_state_file
         )
+
+        if headless_override is not None:
+            base_settings.headless = headless_override
+
+        return base_settings
 
 settings = Settings.initialize()

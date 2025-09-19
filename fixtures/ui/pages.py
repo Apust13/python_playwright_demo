@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import Page
 
-from fixtures.browsers import page_with_state
+from fixtures.ui.browsers import page_with_state
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.signup_page import SignupPage
