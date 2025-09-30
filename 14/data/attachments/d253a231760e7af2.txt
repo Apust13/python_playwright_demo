@@ -1,0 +1,8 @@
+curl -X GET \
+"https://automationexercise.com/api/productsList" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "cookie: csrftoken=50zUUHS2B8vf7mFM2GqycXos6GPkxuze62Ru8Bt7f9ddHwaisPMcpIeY6XLG98PC"

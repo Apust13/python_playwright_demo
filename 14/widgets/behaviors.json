@@ -1,0 +1,1 @@
+{"total":3,"items":[{"uid":"1614d5b8b91a1dd5c196372267b99fd5","name":"Signup new user","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}},{"uid":"e7070b874af79da60c8b2d42a692a6cd","name":"Login by valid credentials","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}}]}

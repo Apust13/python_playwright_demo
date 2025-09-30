@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 340" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=joshua.robinson%40hotmail.com&name=Joshua+Robinson&title=Mr&birth_day=30&birth_month=07&birth_year=1950&firstname=Joshua&lastname=Robinson&company=Rowe-Cook&address1=0944+Anna+Rapid+Apt.+734&address2=Suite+839&country=United+States&state=Wisconsin&city=Strongside&zipcode=92455&password=5l1l%26J%2Ak_2&mobile_number=771-532-4823x97099'
