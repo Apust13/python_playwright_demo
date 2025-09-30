@@ -1,0 +1,10 @@
+curl -X POST \
+"https://automationexercise.com/api/createAccount" \
+-H "host: automationexercise.com" \
+-H "accept: */*" \
+-H "accept-encoding: gzip, deflate" \
+-H "connection: keep-alive" \
+-H "user-agent: python-httpx/0.28.1" \
+-H "content-length: 330" \
+-H "content-type: application/x-www-form-urlencoded" \
+-d 'email=tony.parsons%40hotmail.com&name=Tony+Parsons&title=Mr&birth_day=04&birth_month=07&birth_year=1955&firstname=Tony&lastname=Parsons&company=Hernandez+and+Sons&address1=18683+Hunter+Prairie&address2=Apt.+037&country=United+States&state=Oklahoma&city=East+Shannon&zipcode=99391&password=19K%403Cx%25%21P&mobile_number=3216487082'

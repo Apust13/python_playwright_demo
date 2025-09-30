@@ -1,0 +1,6 @@
+INFO     HTTP_LOGGER:event_hooks.py:15 Make POST request to https://automationexercise.com/api/verifyLogin
+INFO     HTTP_LOGGER:event_hooks.py:19 Got response 200 OK from https://automationexercise.com/api/verifyLogin
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to "200"
+INFO     USERS_ASSERTIONS:users.py:54 Check user exist response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "message" equals to "User exists!"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "message" equals to "200"
