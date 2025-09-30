@@ -1,0 +1,24 @@
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: test-runner
+    volumes:
+      - .:/app
+      - ./allure-results:/app/allure-results
+      - ./video:/app/video
+      - ./tracing:/app/tracing
+    environment:
+      HEADLESS: "true"
+      APP_URL: "https://automationexercise.com"
+      PLAYWRIGHT_BROWSERS_PATH: "0"
+    command: pytest -m "regression" --alluredir=./allure-results
+
+  allure:
+    image: frankescobar/allure-docker-service
+    container_name: allure
+    ports:
+      - "5050:5050"
+    volumes:
+      - ./allure-results:/app/allure-results
